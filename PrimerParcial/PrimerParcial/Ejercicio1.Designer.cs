@@ -33,6 +33,8 @@
             this.num2Label = new System.Windows.Forms.Label();
             this.num1TextBox = new System.Windows.Forms.TextBox();
             this.num2TextBox = new System.Windows.Forms.TextBox();
+            this.resultadoLabel = new System.Windows.Forms.Label();
+            this.resultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // sumarButton
@@ -79,12 +81,33 @@
             this.num2TextBox.Size = new System.Drawing.Size(47, 20);
             this.num2TextBox.TabIndex = 4;
             // 
+            // resultadoLabel
+            // 
+            this.resultadoLabel.AutoSize = true;
+            this.resultadoLabel.Location = new System.Drawing.Point(58, 166);
+            this.resultadoLabel.Name = "resultadoLabel";
+            this.resultadoLabel.Size = new System.Drawing.Size(58, 13);
+            this.resultadoLabel.TabIndex = 5;
+            this.resultadoLabel.Text = "Resultado:";
+            // 
+            // resultado
+            // 
+            this.resultado.AutoSize = true;
+            this.resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultado.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.resultado.Location = new System.Drawing.Point(148, 166);
+            this.resultado.Name = "resultado";
+            this.resultado.Size = new System.Drawing.Size(0, 20);
+            this.resultado.TabIndex = 6;
+            // 
             // Ejercicio1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(281, 199);
+            this.Controls.Add(this.resultado);
+            this.Controls.Add(this.resultadoLabel);
             this.Controls.Add(this.num2TextBox);
             this.Controls.Add(this.num1TextBox);
             this.Controls.Add(this.num2Label);
@@ -92,6 +115,7 @@
             this.Controls.Add(this.sumarButton);
             this.Name = "Ejercicio1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Ejercicio1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,6 +128,8 @@
         private System.Windows.Forms.Label num2Label;
         private System.Windows.Forms.TextBox num1TextBox;
         private System.Windows.Forms.TextBox num2TextBox;
+        private System.Windows.Forms.Label resultadoLabel;
+        private System.Windows.Forms.Label resultado;
     }
 }
 

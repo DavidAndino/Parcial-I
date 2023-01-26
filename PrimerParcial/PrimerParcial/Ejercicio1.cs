@@ -22,7 +22,12 @@ namespace PrimerParcial//namespace sirve para encapsular bloques de codigo, para
             //Creando y definiendo variables
             decimal num1 = Convert.ToDecimal(num1TextBox.Text), num2 = Convert.ToDecimal(num2TextBox.Text);
             decimal res = num1 + num2;
-            MessageBox.Show("El resultado de la suma es: "+res);
+            resultado.Text = Convert.ToString(res);
+
+        }
+
+        private void Ejercicio1_Load(object sender, EventArgs e)
+        {
 
         }
     }
