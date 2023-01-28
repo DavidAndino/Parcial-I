@@ -35,14 +35,14 @@ namespace PrimerParcial
             }
             if (num2TextBox.Text == "")
             {
-                errorProvider1.SetError(num2TextBox, "No seleccion algun numero");//primer parametro: qué control devuelve el error. 2do: el mensaje de error (String)
+                errorProvider1.SetError(num2TextBox, "No ingreso algun numero");//primer parametro: qué control devuelve el error. 2do: el mensaje de error (String)
                 return;//Cancelando ejecucion del programa, para que no se ejecute el codigo que sigue y que no muestre 0 en "respuestaTextBox"
 
             }
             //Validando que se seleccione algun operador 
             if (oPcomboBox.Text == "")//error provider  muestra un error en el control (oPcomboBox en este caso) que le pasemos
             {
-                errorProvider1.SetError(oPcomboBox, "No seleccion algun operador");//primer parametro: que control devuelve el error. 2do: el mensaje de error (String)
+                errorProvider1.SetError(oPcomboBox, "No selecciono algun operador");//primer parametro: que control devuelve el error. 2do: el mensaje de error (String)
                 return;//Cancelando ejecucion del programa, para que no se ejecute el  codigo que sigue y que no muestre 0 en "respuestaTextBox"
             }
             errorProvider1.Clear();//Eliminando advertencias si el usuario ya ingreso algun dato
