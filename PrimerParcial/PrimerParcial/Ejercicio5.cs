@@ -26,7 +26,7 @@ namespace PrimerParcial
         }
         private void hornearPizza()
         {
-            Thread.Sleep(10000);//deteniendo por milisegundos 10
+            Thread.Sleep(10000);//deteniendo por milisegundos =  10 segundos
         }
         private Task hornearPizzaAsync()
         {
@@ -49,7 +49,7 @@ namespace PrimerParcial
 
         private async void calcularButtom_Click(object sender, EventArgs e)
         {
-            decimal num1 = Convert.ToDecimal(num1TextBox.Text), num2 = Convert.ToDecimal(textBox2.Text);
+            decimal num1 = Convert.ToDecimal(num1TextBox.Text), num2 = Convert.ToDecimal(num2TextBox.Text);
             decimal total = await sumarAsync(num1, num2);
             MessageBox.Show($"La suma es: {total}");
         }

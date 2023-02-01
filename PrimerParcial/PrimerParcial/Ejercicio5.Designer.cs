@@ -31,10 +31,10 @@
             this.hornearButton = new System.Windows.Forms.Button();
             this.hornearAsinButton = new System.Windows.Forms.Button();
             this.calcularButtom = new System.Windows.Forms.Button();
-            this.Num1Label = new System.Windows.Forms.Label();
-            this.Num2Label = new System.Windows.Forms.Label();
+            this.num1Label = new System.Windows.Forms.Label();
+            this.num2Label = new System.Windows.Forms.Label();
             this.num1TextBox = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.num2TextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // hornearButton
@@ -69,23 +69,23 @@
             this.calcularButtom.UseVisualStyleBackColor = true;
             this.calcularButtom.Click += new System.EventHandler(this.calcularButtom_Click);
             // 
-            // Num1Label
+            // num1Label
             // 
-            this.Num1Label.AutoSize = true;
-            this.Num1Label.Location = new System.Drawing.Point(131, 114);
-            this.Num1Label.Name = "Num1Label";
-            this.Num1Label.Size = new System.Drawing.Size(35, 13);
-            this.Num1Label.TabIndex = 3;
-            this.Num1Label.Text = "Num1";
+            this.num1Label.AutoSize = true;
+            this.num1Label.Location = new System.Drawing.Point(127, 110);
+            this.num1Label.Name = "num1Label";
+            this.num1Label.Size = new System.Drawing.Size(53, 13);
+            this.num1Label.TabIndex = 3;
+            this.num1Label.Text = "Numero 1";
             // 
-            // Num2Label
+            // num2Label
             // 
-            this.Num2Label.AutoSize = true;
-            this.Num2Label.Location = new System.Drawing.Point(131, 151);
-            this.Num2Label.Name = "Num2Label";
-            this.Num2Label.Size = new System.Drawing.Size(35, 13);
-            this.Num2Label.TabIndex = 4;
-            this.Num2Label.Text = "Num2";
+            this.num2Label.AutoSize = true;
+            this.num2Label.Location = new System.Drawing.Point(127, 154);
+            this.num2Label.Name = "num2Label";
+            this.num2Label.Size = new System.Drawing.Size(53, 13);
+            this.num2Label.TabIndex = 4;
+            this.num2Label.Text = "Numero 2";
             // 
             // num1TextBox
             // 
@@ -94,22 +94,22 @@
             this.num1TextBox.Size = new System.Drawing.Size(100, 20);
             this.num1TextBox.TabIndex = 5;
             // 
-            // textBox2
+            // num2TextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(189, 151);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.num2TextBox.Location = new System.Drawing.Point(189, 151);
+            this.num2TextBox.Name = "num2TextBox";
+            this.num2TextBox.Size = new System.Drawing.Size(100, 20);
+            this.num2TextBox.TabIndex = 6;
             // 
             // Ejercicio5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 232);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.num2TextBox);
             this.Controls.Add(this.num1TextBox);
-            this.Controls.Add(this.Num2Label);
-            this.Controls.Add(this.Num1Label);
+            this.Controls.Add(this.num2Label);
+            this.Controls.Add(this.num1Label);
             this.Controls.Add(this.calcularButtom);
             this.Controls.Add(this.hornearAsinButton);
             this.Controls.Add(this.hornearButton);
@@ -125,9 +125,9 @@
         private System.Windows.Forms.Button hornearButton;
         private System.Windows.Forms.Button hornearAsinButton;
         private System.Windows.Forms.Button calcularButtom;
-        private System.Windows.Forms.Label Num1Label;
-        private System.Windows.Forms.Label Num2Label;
+        private System.Windows.Forms.Label num1Label;
+        private System.Windows.Forms.Label num2Label;
         private System.Windows.Forms.TextBox num1TextBox;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox num2TextBox;
     }
 }
