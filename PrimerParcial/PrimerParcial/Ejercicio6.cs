@@ -20,7 +20,7 @@ namespace PrimerParcial
 
         private void arrayButton_Click(object sender, EventArgs e)
         {
-            int[] array = new int [5];//creando vector
+            int[] array = new int [5];//creando arreglo
             //asignando valores al arreglo
             array[0] = 10;
             array[1] = 20;
@@ -37,11 +37,14 @@ namespace PrimerParcial
 
             for (int i = 0; i < array5.Length; i++)
             {
-                arrayListBox.Items.Add(array5[i]);//recorriendo cada una de las posiciones del arreglo y almacenandolo  y mostrandolo en el arrayListBox
-                
+                arrayListBox.Items.Add(array5[i]);/*recorriendo cada una de las posiciones del arreglo y almacenandolo y mostrandolo en el arrayListBox
+                                                   "Items" almacena elementos en el listBox, luego que el "Add" le agregara los  mismos
+                                                    elementos al "Items"
+                                                   */
             }
 
-            foreach (string item in array5)//var identifica el tipo de dato automaticamente
+            foreach (string item in array5)/*var identifica el tipo de dato que se le asigna a una variable automaticamente. 
+                                            Itera listas o colecciones de objetos*/
             {
                 comboBox1.Items.Add(item);
             }

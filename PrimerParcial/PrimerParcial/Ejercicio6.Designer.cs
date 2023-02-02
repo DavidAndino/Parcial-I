@@ -38,7 +38,7 @@
             this.arrayListBox.FormattingEnabled = true;
             this.arrayListBox.Location = new System.Drawing.Point(45, 23);
             this.arrayListBox.Name = "arrayListBox";
-            this.arrayListBox.Size = new System.Drawing.Size(120, 95);
+            this.arrayListBox.Size = new System.Drawing.Size(120, 56);
             this.arrayListBox.TabIndex = 0;
             // 
             // arrayButton
