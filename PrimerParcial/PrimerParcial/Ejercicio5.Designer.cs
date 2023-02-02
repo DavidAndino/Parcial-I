@@ -55,7 +55,7 @@
             this.hornearAsinButton.Name = "hornearAsinButton";
             this.hornearAsinButton.Size = new System.Drawing.Size(152, 59);
             this.hornearAsinButton.TabIndex = 1;
-            this.hornearAsinButton.Text = "Hornear Pizza";
+            this.hornearAsinButton.Text = "Hornear Pizza Asyn";
             this.hornearAsinButton.UseVisualStyleBackColor = true;
             this.hornearAsinButton.Click += new System.EventHandler(this.hornearAsinButton_Click);
             // 
