@@ -32,7 +32,8 @@ namespace PrimerParcial//namespace sirve para encapsular bloques de codigo, para
             //Imprimiendo en etiqueta
             resultadoLabel.Text = Convert.ToString(sumaTotal);
             //Imprimiendo con ventana
-            MessageBox.Show ("El resultado es: " + sumaTotal, "Calculator", MessageBoxButtons.OK, MessageBoxIcon.Information);//"Calculator es  el titulo de la ventana". Las comas separan parametros
+            MessageBox.Show ("El resultado es: " + sumaTotal, "Calculator", MessageBoxButtons.OK, MessageBoxIcon.Information);/*"Calculator es  el titulo de la ventana".
+                                                                                                                               Las comas separan parametros*/
         }
 
         private void Ejercicio1_Load(object sender, EventArgs e)
