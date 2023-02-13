@@ -25,6 +25,8 @@ namespace PrimerParcial
         {
             //Carro miCarro = new Carro();//creando instancia u objeto de la clase "Carro", con el constructor vacio o "por default" en Java
             //Carro miCarro2 = new Carro("Subaru", "WRX");//utilizando constructor con parametros. Instanciar es crear un objeto de la clase (Carro en este caso)
+            //definicion de constante
+            const string valor = "ok";
 
             //Definiendo e inicializando variables
             string marca = marcaTextBox.Text;
