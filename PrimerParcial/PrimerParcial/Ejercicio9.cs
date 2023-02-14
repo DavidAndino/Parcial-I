@@ -28,22 +28,25 @@ namespace PrimerParcial
             //definicion de constante
             const string valor = "ok";
 
+            //validando precio
+            decimal precio = precioTextBox.Text == string.Empty ? 0 : Convert.ToDecimal(precioTextBox.Text);/* "?" es "entonces: y precio = 0;// ":" es "else"
+                                                                                                             */s
             //Definiendo e inicializando variables
             string marca = marcaTextBox.Text;
             string modelo = modelTextBox.Text;
-            decimal precio = Convert.ToDecimal(precioTextBox.Text);
+            //decimal precio = Convert.ToDecimal(precioTextBox.Text);
             int km = Convert.ToInt32(kmTextBox.Text);
 
-            miCarro = new Carro();
-            miCarro.Marca = marca;
-            miCarro.Modelo = modelo;
+            miCarro = new Carro();//instanciando objeto
+            miCarro.Marca = marca;//esto equivaldria utilizar instanciar con el constructor que tiene todos los parametros. utilizando "set"
+            miCarro.Modelo = modelo;//utilizando "set" en todas estas
             miCarro.Precio = precio;
             miCarro.Km= km;
 
             //MessageBox.Show("Objeto Carro -> Marca: " + miCarro.Marca + " Modelo: " + miCarro.Modelo);
             
-            listaCarros.Add(miCarro);//llenando lista mediante las modificaciones de los estados por el usuario
-            carrosDataGridView.DataSource = null;//limpiando 
+            listaCarros.Add(miCarro);//llenando lista mediante las modificaciones de los estados de los atributos por el usuario, cada vez que se de click
+            carrosDataGridView.DataSource = null;//limpiando para que deje agregar mas registros o filas
             carrosDataGridView.DataSource = listaCarros;
             limpiarControles();
             marcaTextBox.Focus();//enviando el foco al primer textbox luego de operar
